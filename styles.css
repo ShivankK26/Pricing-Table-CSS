@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap');
+
+body{
+    font-family: 'Sono', sans-serif;
+  }
+
+
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+
+.pricing-plan{
+    flex: 1; /* the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.plan-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.plan-price{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.plan-features{
+    list-style: none; /* removes the list features */
+    padding: 0;
+    margin: 0;
+}
+
+
+.plan-features li{
+    margin-bottom: 20px;
+}
+
+
+.plan-button{
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+
+@media (max-width: 1250px){ /* When the screen width is under 1250px then we're going to target pricing-container. */
+    .pricing-container{
+        flex-direction: column;
+        height: 100%;
+    }
+}
